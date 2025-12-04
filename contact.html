@@ -5,10 +5,7 @@
     <meta name="author" content="Swiss Valley Retreat">
     <meta name="description" content="Contact Swiss Valley Retreat — We're here to help you plan your dream vacation.">
 
-    <title>Contact • Swiss Valley Retreat</title>
-
-     <!-- Favicon -->
-    <link rel="icon" href="favicon.png" type="image/png">
+    <title>Contact - Swiss Valley Retreat</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
@@ -32,73 +29,67 @@
         </nav>
     </header>
 
-    <!-- HERO IMAGE -->
-    <section class="hero">
-        <img src="images/swiss-valley.jpg" alt="A serene valley in the Swiss Alps with blue skies and mountains">
-    </section>
+    <!-- PAGE WRAPPER -->
+    <div class="page-wrapper">
 
-    <!-- MAIN CONTENT -->
-    <main class="contact-layout">
+        <!-- HERO IMAGE -->
+        <section class="hero">
+            <img src="images/swiss-sunset.jpg" 
+                 alt="Sunset over the Swiss Alps with glowing orange sky">
+        </section>
 
         <h2>Contact Us</h2>
 
-        <p class="contact-intro">
-            Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us! <br>
-            Required fields marked with a *
+        <p class="intro">
+            Please reach out to us with any questions or concerns.  
+            We are happy to help you plan your dream vacation with us!  
+            <strong>Required fields marked with a *</strong>
         </p>
 
-        <div class="contact-container">
+        <!-- CONTACT FORM WRAPPER (CENTERED) -->
+        <div class="form-wrapper">
 
-            <!-- LEFT IMAGE (Layout 1 requirement) -->
-            <div class="contact-image-box">
-                <img src="images/swiss-sunset.jpg" alt="Sunset over the Swiss Alps with glowing orange sky">
-            </div>
+            <form method="post" action="https://wp.zybooks.com/form-viewer.php">
 
-            <!-- RIGHT FORM -->
-            <div class="contact-form-box">
+                <!-- Full Name -->
+                <label for="fullname">Full Name *</label>
+                <input type="text" id="fullname" name="fullname" required>
 
-                <form method="post" action="https://wp.zybooks.com/form-viewer.php">
+                <!-- Email -->
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
 
-                    <!-- Full Name -->
-                    <label for="fullname">Full Name *</label>
-                    <input type="text" id="fullname" name="fullname" required>
+                <!-- Phone -->
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required>
 
-                    <!-- Email -->
-                    <label for="email">Email Address *</label>
-                    <input type="email" id="email" name="email" required>
+                <!-- Preferred Contact Method -->
+                <fieldset class="preferred-method">
+                    <legend>Preferred Contact Method *</legend>
 
-                    <!-- Phone Number -->
-                    <label for="phone">Phone Number *</label>
-                    <input type="tel" id="phone" name="phone" required>
+                    <label>
+                        <input type="radio" name="preferred" value="email" required>
+                        Email
+                    </label>
 
-                    <!-- Preferred Contact Method -->
-                    <fieldset class="preferred-method">
-                        <legend>Preferred Contact Method *</legend>
+                    <label>
+                        <input type="radio" name="preferred" value="phone">
+                        Phone
+                    </label>
+                </fieldset>
 
-                        <label>
-                            <input type="radio" name="contactmethod" value="email" required>
-                            Email
-                        </label>
+                <!-- Comments -->
+                <label for="comments">Comments *</label>
+                <textarea id="comments" name="comments" required></textarea>
 
-                        <label>
-                            <input type="radio" name="contactmethod" value="phone" required>
-                            Phone
-                        </label>
-                    </fieldset>
+                <!-- Submit Button -->
+                <button type="submit">Send Message</button>
 
-                    <!-- Comments -->
-                    <label for="comments">Comments *</label>
-                    <textarea id="comments" name="comments" required></textarea>
+            </form>
 
-                    <!-- Submit Button -->
-                    <button type="submit">Send Message</button>
-
-                </form>
-
-            </div>
         </div>
 
-    </main>
+    </div>
 
     <!-- FOOTER -->
     <footer class="footer">
@@ -108,5 +99,6 @@
 
 </body>
 </html>
+
 
 
