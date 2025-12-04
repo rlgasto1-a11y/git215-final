@@ -1,206 +1,219 @@
-/* ============================
-   GLOBAL SETTINGS
-============================ */
+/* ------------------------------
+   GLOBAL STYLES
+------------------------------ */
+
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Montserrat', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-    color: #333;
+    font-family: "Poppins", sans-serif;
+    background-color: #e6f0fa; /* soft blue */
+    color: #1d3557;
     line-height: 1.6;
-    font-size: 1rem;
 }
 
-/* Wrapping container at 1280px */
+/* ------------------------------
+   PAGE WRAPPER
+------------------------------ */
 .page-wrapper {
+    width: 90%;
     max-width: 1280px;
     margin: 0 auto;
-    padding: 0 20px;
 }
 
-/* ============================
-   HEADER + NAVIGATION
-============================ */
-.header {
-    background-color: #fff;
-    border-bottom: 2px solid #eee;
-    padding: 20px 0;
+/* ------------------------------
+   HEADER + NAV
+------------------------------ */
+
+header {
+    background-color: #ffffff;
+    padding: 25px 0 10px 0; /* reduce bottom padding to pull images upward */
+    text-align: center;
+    border-bottom: 3px solid #a8c4dd;
 }
 
-.header h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-.header h1 a {
-    text-decoration: none;
-    color: #333;
+header h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #1d3557;
 }
 
 nav ul {
-    display: flex;
-    gap: 20px;
     list-style: none;
-    padding-left: 0;
-}
-
-nav a {
-    text-decoration: none;
-    color: #444;
-    font-weight: 600;
-}
-
-nav a:hover {
-    color: #0077cc;
-}
-
-nav a.active {
-    color: #0077cc;
-    border-bottom: 2px solid #0077cc;
-}
-
-/* ============================
-   HERO IMAGE
-============================ */
-.hero img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* ============================
-   MAIN TEXT
-============================ */
-main h2 {
-    font-size: 2rem;
-    margin-top: 40px;
-}
-
-.intro,
-.contact-intro {
-    max-width: 65ch;
-    margin: 20px auto 40px auto;
-    text-align: left; /* REQUIRED for rubric */
-}
-
-/* ============================
-   CONTENT BLOCKS
-============================ */
-.content-block {
-    display: flex;
-    gap: 30px;
-    margin: 40px auto;
-    max-width: 1280px;
-    padding: 0 20px;
-}
-
-.content-block img {
-    width: 50%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.text-group {
-    width: 50%;
-}
-
-.text-group h3 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-}
-
-/* ============================
-   CONTACT PAGE LAYOUT
-============================ */
-.contact-layout h2 {
-    text-align: left;
-    max-width: 1280px;
-    margin: 40px auto 10px auto;
-    padding: 0 20px;
-}
-
-.contact-container {
     display: flex;
     justify-content: center;
     gap: 40px;
-    max-width: 1280px;
-    margin: 20px auto 60px auto;
-    padding: 0 20px;
 }
 
-.contact-image-box img {
-    width: 500px;
-    max-width: 100%;
-    border-radius: 8px;
+nav ul li a {
+    text-decoration: none;
+    color: #1d3557;
+    font-size: 18px;
+    font-weight: 600;
 }
 
-.contact-form-box {
+nav ul li a:hover,
+nav ul li a.active {
+    color: #457b9d;
+    text-decoration: underline;
+}
+
+/* ------------------------------
+   HERO IMAGES (INDEX + CONTACT)
+------------------------------ */
+
+/* Remove ALL spacing above hero images */
+.hero,
+.contact-hero {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+.hero img,
+.contact-hero img {
     width: 100%;
-    max-width: 500px;
+    height: auto;
+    display: block;
+    margin-top: 0 !important;
 }
 
-/* ============================
-   FORM STYLING
-============================ */
-form {
+/* Remove accidental top spacing from first elements */
+.page-wrapper > *:first-child,
+.intro {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+/* ------------------------------
+   HOME PAGE CONTENT
+------------------------------ */
+
+main {
+    padding: 40px 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #1d3557;
+}
+
+p.intro {
+    max-width: 900px;
+    margin: 0 auto 25px auto;
+    font-size: 18px;
+    text-align: center;
+}
+
+.content-block {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin: 50px auto;
+    width: 90%;
+    max-width: 1100px;
 }
 
-label {
+.content-block img {
+    width: 45%;
+    border-radius: 10px;
+}
+
+.text-group h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.text-group p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* ------------------------------
+   CONTACT FORM WRAPPER (CENTERED WHITE BOX)
+------------------------------ */
+
+.form-wrapper {
+    max-width: 700px;
+    margin: 40px auto;     /* centers entire white box */
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    border: 2px solid #a8c4dd;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Labels */
+form label,
+form legend {
+    display: block;
     font-weight: 600;
     margin-top: 15px;
+    color: #1d3557;
 }
 
-input,
-textarea {
+/* Inputs */
+form input,
+form textarea {
     width: 100%;
-    padding: 10px;
-    font-size: 1rem;
-    margin-top: 5px;
-    border-radius: 6px;
-    border: 1px solid #bbb;
-}
-
-/* Required pseudo-classes for rubric */
-input:focus,
-textarea:focus {
-    border-color: #0077cc;
-    outline: 2px solid #0077cc;
-}
-
-input:invalid,
-textarea:invalid {
-    border-color: #cc0000;
-}
-
-button {
-    margin-top: 20px;
     padding: 12px;
-    font-size: 1rem;
-    font-weight: 600;
+    border: 2px solid #a8c4dd;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+/* Textarea */
+form textarea {
+    height: 130px;
+    resize: vertical;
+}
+
+/* Fieldset for radio buttons */
+.preferred-method {
+    border: 2px solid #a8c4dd;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.preferred-method label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 8px 0;
+}
+
+/* Submit Button */
+button[type="submit"] {
+    margin-top: 20px;
+    background-color: #457b9d;
     color: white;
-    background-color: #0077cc;
+    padding: 12px 20px;
     border: none;
     border-radius: 6px;
     cursor: pointer;
+    font-size: 16px;
 }
 
 button:hover {
-    background-color: #005fa3;
+    background-color: #1d3557;
 }
 
-/* ============================
+/* ------------------------------
    FOOTER
-============================ */
-.footer {
+------------------------------ */
+
+footer {
     text-align: center;
-    padding: 30px 0;
+    padding: 20px;
     margin-top: 40px;
-    background: #f3f3f3;
-    font-size: 0.9rem;
+    color: #1d3557;
+    opacity: 0.8;
 }
+
+

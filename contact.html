@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Swiss Valley Retreat">
-    <meta name="description" content="Contact Swiss Valley Retreat — We're here to help you plan your dream vacation.">
-
-    <title>Contact - Swiss Valley Retreat</title>
+    <meta name="description" content="Contact Swiss Valley Retreat — We are happy to help you plan your dream vacation.">
+    <title>Contact Us</title>
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css">
@@ -17,9 +16,8 @@
 <body>
 
     <!-- HEADER -->
-    <header class="header">
+    <header>
         <h1>Swiss Valley Retreat</h1>
-
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -28,42 +26,42 @@
             </ul>
         </nav>
     </header>
+    
+    <!-- CONTACT HERO IMAGE -->
+    <div class="contact-hero">
+        <img src="images/swiss-sunset.jpg" alt="Sunset over the Swiss Alps with glowing orange sky">
+    </div>
 
-    <!-- PAGE WRAPPER -->
+    <!-- PAGE INTRO -->
     <div class="page-wrapper">
-
-        <!-- HERO IMAGE -->
-        <section class="hero">
-            <img src="images/swiss-sunset.jpg" 
-                 alt="Sunset over the Swiss Alps with glowing orange sky">
-        </section>
-
-        <h2>Contact Us</h2>
-
         <p class="intro">
-            Please reach out to us with any questions or concerns.  
-            We are happy to help you plan your dream vacation with us!  
+            Please reach out to us with any questions or concerns. 
+            We are happy to help you plan your dream vacation with us!
             <strong>Required fields marked with a *</strong>
         </p>
+    </div>
 
-        <!-- CONTACT FORM WRAPPER (CENTERED) -->
-        <div class="form-wrapper">
+    <!-- FORM WRAPPER (KEEPS CENTERING) -->
+    <div class="form-wrapper">
+
+        <!-- WHITE BOX (700PX) -->
+        <div class="form-box">
 
             <form method="post" action="https://wp.zybooks.com/form-viewer.php">
 
-                <!-- Full Name -->
+                <!-- FULL NAME -->
                 <label for="fullname">Full Name *</label>
                 <input type="text" id="fullname" name="fullname" required>
 
-                <!-- Email -->
+                <!-- EMAIL -->
                 <label for="email">Email Address *</label>
                 <input type="email" id="email" name="email" required>
 
-                <!-- Phone -->
+                <!-- PHONE -->
                 <label for="phone">Phone Number *</label>
                 <input type="tel" id="phone" name="phone" required>
 
-                <!-- Preferred Contact Method -->
+                <!-- CONTACT METHOD -->
                 <fieldset class="preferred-method">
                     <legend>Preferred Contact Method *</legend>
 
@@ -78,13 +76,11 @@
                     </label>
                 </fieldset>
 
-                <!-- Comments -->
+                <!-- COMMENTS -->
                 <label for="comments">Comments *</label>
                 <textarea id="comments" name="comments" required></textarea>
 
-                <!-- Submit Button -->
                 <button type="submit">Send Message</button>
-
             </form>
 
         </div>
@@ -92,13 +88,14 @@
     </div>
 
     <!-- FOOTER -->
-    <footer class="footer">
+    <footer>
         <p>Copyright ©2023 - Swiss Valley Retreat</p>
         <p>This site is for educational purposes only</p>
     </footer>
 
 </body>
 </html>
+
 
 
 
