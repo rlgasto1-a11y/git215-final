@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Swiss Valley Retreat">
+    <meta name="description" content="Contact Swiss Valley Retreat — We're here to help you plan your dream vacation.">
+
+    <title>Contact • Swiss Valley Retreat</title>
+
+     <!-- Favicon -->
+    <link rel="icon" href="favicon.png" type="image/png">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <h1>Swiss Valley Retreat</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Accommodations</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO IMAGE -->
+    <section class="hero">
+        <img src="images/swiss-valley.jpg" alt="A serene valley in the Swiss Alps with blue skies and mountains">
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main class="contact-layout">
+
+        <h2>Contact Us</h2>
+
+        <p class="contact-intro">
+            Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us! <br>
+            Required fields marked with a *
+        </p>
+
+        <div class="contact-container">
+
+            <!-- LEFT IMAGE (Layout 1 requirement) -->
+            <div class="contact-image-box">
+                <img src="images/swiss-sunset.jpg" alt="Sunset over the Swiss Alps with glowing orange sky">
+            </div>
+
+            <!-- RIGHT FORM -->
+            <div class="contact-form-box">
+
+                <form method="post" action="https://wp.zybooks.com/form-viewer.php">
+
+                    <!-- Full Name -->
+                    <label for="fullname">Full Name *</label>
+                    <input type="text" id="fullname" name="fullname" required>
+
+                    <!-- Email -->
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <!-- Phone Number -->
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <!-- Preferred Contact Method -->
+                    <fieldset class="preferred-method">
+                        <legend>Preferred Contact Method *</legend>
+
+                        <label>
+                            <input type="radio" name="contactmethod" value="email" required>
+                            Email
+                        </label>
+
+                        <label>
+                            <input type="radio" name="contactmethod" value="phone" required>
+                            Phone
+                        </label>
+                    </fieldset>
+
+                    <!-- Comments -->
+                    <label for="comments">Comments *</label>
+                    <textarea id="comments" name="comments" required></textarea>
+
+                    <!-- Submit Button -->
+                    <button type="submit">Send Message</button>
+
+                </form>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>Copyright ©2023 - Swiss Valley Retreat</p>
+        <p>This site is for educational purposes only</p>
+    </footer>
+
+</body>
+</html>
+
+

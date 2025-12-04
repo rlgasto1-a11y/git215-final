@@ -1,0 +1,218 @@
+/* ======================================================
+   GLOBAL RESET
+====================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ======================================================
+   GLOBAL STYLES
+====================================================== */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #DCEAF3; /* icy blue */
+    color: #3D3D3D;
+    line-height: 1.6;
+}
+
+/* ======================================================
+   HEADER
+====================================================== */
+.header {
+    background-color: #FFFFFF;
+    border-bottom: 4px solid #345E8E;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header h1 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #345E8E;
+    margin-bottom: 10px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #345E8E;
+    font-size: 16px;
+}
+
+nav a:hover,
+nav .active {
+    border-bottom: 2px solid #345E8E;
+    padding-bottom: 3px;
+}
+
+/* ======================================================
+   HERO IMAGE
+====================================================== */
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ======================================================
+   MAIN CONTENT
+====================================================== */
+.home-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.home-content h2 {
+    font-size: 32px;
+    color: #345E8E;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.intro {
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+/* ======================================================
+   CONTENT BLOCKS
+====================================================== */
+.content-block {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.content-block img {
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.text-group {
+    width: 60%;
+    text-align: left;
+}
+
+.text-group h3 {
+    font-size: 22px;
+    color: #345E8E;
+    margin-bottom: 10px;
+}
+
+.text-group p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+/* ======================================================
+   CONTACT PAGE
+====================================================== */
+.contact-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.contact-container h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #345E8E;
+    margin-bottom: 20px;
+}
+
+.contact-container p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.contact-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.contact-image {
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+form {
+    width: 45%;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+
+form label {
+    font-weight: 600;
+    color: #345E8E;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    border: 2px solid #BBD1E0;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 120px;
+}
+
+.radio-group {
+    margin-bottom: 20px;
+}
+
+.radio-group label {
+    margin-right: 15px;
+    font-weight: 500;
+}
+
+button {
+    background-color: #345E8E;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #27496D;
+}
+
+/* ======================================================
+   FOOTER
+====================================================== */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+    color: #345E8E;
+    font-size: 14px;
+}
