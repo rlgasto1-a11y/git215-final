@@ -1,218 +1,206 @@
-/* ======================================================
-   GLOBAL RESET
-====================================================== */
+/* ============================
+   GLOBAL SETTINGS
+============================ */
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
-/* ======================================================
-   GLOBAL STYLES
-====================================================== */
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #DCEAF3; /* icy blue */
-    color: #3D3D3D;
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
     line-height: 1.6;
+    font-size: 1rem;
 }
 
-/* ======================================================
-   HEADER
-====================================================== */
+/* Wrapping container at 1280px */
+.page-wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ============================
+   HEADER + NAVIGATION
+============================ */
 .header {
-    background-color: #FFFFFF;
-    border-bottom: 4px solid #345E8E;
-    text-align: center;
+    background-color: #fff;
+    border-bottom: 2px solid #eee;
     padding: 20px 0;
 }
 
 .header h1 {
-    font-size: 32px;
-    font-weight: 600;
-    color: #345E8E;
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 
-/* Navigation */
+.header h1 a {
+    text-decoration: none;
+    color: #333;
+}
+
 nav ul {
-    list-style: none;
     display: flex;
-    justify-content: center;
-    gap: 40px;
+    gap: 20px;
+    list-style: none;
+    padding-left: 0;
 }
 
 nav a {
     text-decoration: none;
+    color: #444;
     font-weight: 600;
-    color: #345E8E;
-    font-size: 16px;
 }
 
-nav a:hover,
-nav .active {
-    border-bottom: 2px solid #345E8E;
-    padding-bottom: 3px;
+nav a:hover {
+    color: #0077cc;
 }
 
-/* ======================================================
+nav a.active {
+    color: #0077cc;
+    border-bottom: 2px solid #0077cc;
+}
+
+/* ============================
    HERO IMAGE
-====================================================== */
+============================ */
 .hero img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-/* ======================================================
-   MAIN CONTENT
-====================================================== */
-.home-content {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    text-align: center;
+/* ============================
+   MAIN TEXT
+============================ */
+main h2 {
+    font-size: 2rem;
+    margin-top: 40px;
 }
 
-.home-content h2 {
-    font-size: 32px;
-    color: #345E8E;
-    margin-bottom: 20px;
-    font-weight: 600;
+.intro,
+.contact-intro {
+    max-width: 65ch;
+    margin: 20px auto 40px auto;
+    text-align: left; /* REQUIRED for rubric */
 }
 
-.intro {
-    font-size: 18px;
-    margin-bottom: 50px;
-}
-
-/* ======================================================
+/* ============================
    CONTENT BLOCKS
-====================================================== */
+============================ */
 .content-block {
     display: flex;
-    align-items: center;
-    gap: 40px;
-    margin-bottom: 60px;
+    gap: 30px;
+    margin: 40px auto;
+    max-width: 1280px;
+    padding: 0 20px;
 }
 
 .content-block img {
-    width: 40%;
-    border-radius: 10px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
 }
 
 .text-group {
-    width: 60%;
-    text-align: left;
+    width: 50%;
 }
 
 .text-group h3 {
-    font-size: 22px;
-    color: #345E8E;
-    margin-bottom: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
 }
 
-.text-group p {
-    font-size: 17px;
-    line-height: 1.6;
+/* ============================
+   CONTACT PAGE LAYOUT
+============================ */
+.contact-layout h2 {
+    text-align: left;
+    max-width: 1280px;
+    margin: 40px auto 10px auto;
+    padding: 0 20px;
 }
 
-/* ======================================================
-   CONTACT PAGE
-====================================================== */
 .contact-container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 40px 20px;
-}
-
-.contact-container h2 {
-    text-align: center;
-    font-size: 32px;
-    color: #345E8E;
-    margin-bottom: 20px;
-}
-
-.contact-container p {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 18px;
-}
-
-.contact-content {
     display: flex;
-    align-items: flex-start;
     justify-content: center;
-    gap: 50px;
-    margin-top: 40px;
+    gap: 40px;
+    max-width: 1280px;
+    margin: 20px auto 60px auto;
+    padding: 0 20px;
 }
 
-.contact-image {
-    width: 40%;
-    border-radius: 10px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+.contact-image-box img {
+    width: 500px;
+    max-width: 100%;
+    border-radius: 8px;
 }
 
+.contact-form-box {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* ============================
+   FORM STYLING
+============================ */
 form {
-    width: 45%;
-    background: #fff;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
 }
 
-form label {
+label {
     font-weight: 600;
-    color: #345E8E;
+    margin-top: 15px;
 }
 
-form input,
-form textarea {
+input,
+textarea {
     width: 100%;
     padding: 10px;
-    margin-top: 6px;
-    margin-bottom: 20px;
-    border: 2px solid #BBD1E0;
-    border-radius: 8px;
-    font-size: 16px;
+    font-size: 1rem;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #bbb;
 }
 
-textarea {
-    height: 120px;
+/* Required pseudo-classes for rubric */
+input:focus,
+textarea:focus {
+    border-color: #0077cc;
+    outline: 2px solid #0077cc;
 }
 
-.radio-group {
-    margin-bottom: 20px;
-}
-
-.radio-group label {
-    margin-right: 15px;
-    font-weight: 500;
+input:invalid,
+textarea:invalid {
+    border-color: #cc0000;
 }
 
 button {
-    background-color: #345E8E;
-    color: white;
-    padding: 12px 18px;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 1rem;
     font-weight: 600;
+    color: white;
+    background-color: #0077cc;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
 button:hover {
-    background-color: #27496D;
+    background-color: #005fa3;
 }
 
-/* ======================================================
+/* ============================
    FOOTER
-====================================================== */
-footer {
+============================ */
+.footer {
     text-align: center;
+    padding: 30px 0;
     margin-top: 40px;
-    padding: 20px 0;
-    color: #345E8E;
-    font-size: 14px;
+    background: #f3f3f3;
+    font-size: 0.9rem;
 }
